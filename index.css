@@ -218,16 +218,28 @@ footer{
 @media (max-width: 480px)
   /* //Mobiles */
   {
-       body{
-          width: 100%;
-          height: 100%;
+
+    /* .media{
+        width: 80%;
+    }
+    .copyrights{
+        width: 80%;
+    } */
+      #voice{
+          display: none;
       }
+    .search input{
+        width: 80%;
+    }
   }
   
   @media (min-width: 481px) and (max-width: 1250px)
   /* //Tablets */
   {
   
+    .search input{
+        width: 90%;
+    }
   }
   
   @media (min-width: 1251px)
