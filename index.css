@@ -225,11 +225,9 @@ footer{
     .copyrights{
         width: 80%;
     } */
-      #voice{
-          display: none;
-      }
+     
     .search input{
-        width: 80%;
+        width: 95%;
     }
   }
   
