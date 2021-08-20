@@ -219,17 +219,20 @@ footer{
   /* //Mobiles */
   {
 
-    /* .media{
-        width: 80%;
+    #voice{
+        margin-left: -35px;
     }
+    .copyrights i{
+        margin-left: 20px;
+    }
+
     .copyrights{
-        width: 80%;
-    } */
+        width: 290px;
+        font-size: medium;
+        margin: auto;
+        text-align: center;
+    }
       
-      #voice{
-          margin=left:-35px;
-      }
-     
     .search input{
         width: 95%;
     }
