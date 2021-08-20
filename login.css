@@ -1,0 +1,178 @@
+body{
+background-color: rgb(233, 221, 197);
+
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+form{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(231, 196, 150);
+}
+
+.sign{
+
+    position: relative;
+    border: none;
+    background-color: wheat;
+    padding: 2px 2px 2px 2px;
+    width: 65px;
+    color: darkred;
+    font-weight: bold;
+    height: 30px;
+    float: right;
+    margin: 2px;
+
+}
+.inner{
+    justify-content: center; 
+
+    text-align: center;
+     margin-top: -100px;
+}
+
+#myform2{
+    display: none;
+}
+
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+    height: 470px;
+    padding: 20px 20px 0px 20px;
+}
+
+.inner h1{
+    margin-top: 260px;
+    padding-top: 80px;
+
+    margin-bottom: -60px;
+}
+.user{
+    margin-top: 90px; 
+  }
+ 
+  
+#error, #error2{
+    color: darkred;
+    margin-left: -28px;
+    
+}
+.user input{
+    outline: none;
+    width: 260px;
+    border: none;
+    height: 30px;
+    border-radius:4px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+
+}
+.pass input{
+    outline: none;
+
+    margin-left: 4px;
+    width: 260px;
+    border: none;
+
+    height: 30px;
+    border-radius:4px;
+    margin-bottom: 10px;
+
+}
+
+.login{
+margin-top:10px ;
+border: none;
+
+margin-left: -50px;
+padding: 2px 6px 24px 65px;
+} 
+
+.login button{
+    background-color: wheat;
+    color:black;
+    font-size: medium;
+    width: 260px;
+    height: 30px;
+border-radius:15px;
+box-shadow: 0px 5px rgb(109, 110, 107);
+outline: none;
+    
+}
+
+
+.login button:hover{
+    color: black;
+   background:linear-gradient(70deg,rgb(23, 221, 139),rgb(209, 226, 51),green);
+   font-weight: bold;
+   
+}
+.login button.active{
+    background-color: red;
+    transform: translateY(7px);
+}
+
+.inner h5{
+    margin-top: -5px;
+    margin-bottom: -50px;
+}
+.socialmedia{
+    margin-top: 60px;
+    padding: 20px 20px 20px 20px ;
+}
+
+.media{
+    border-radius: 30px;
+    width: 90px;
+    height: 30px;
+}
+.media:hover{
+    color: black;
+    font-weight: bold;
+}
+#facebook{
+    width: 260px;
+    height: 30px;
+    background-color: rgb(49, 102, 248);
+    margin-bottom: 10px;
+}
+
+#google{
+    width: 260px;
+    height: 30px;
+    background-color: rgb(230, 84, 84);
+}
+
+#facebook:hover{
+    background: linear-gradient(34deg,blue,rgb(52, 216, 238));
+
+}
+#google:hover{
+    background: linear-gradient(50deg,green,blue,red,yellow);
+
+}
+
+@media (max-width: 480px)
+  /* //Mobiles */
+  {
+      
+  }
+  
+  @media (min-width: 481px) and (max-width: 1250px)
+  /* //Tablets */
+  {
+  
+  }
+  
+  @media (min-width: 1251px)
+  {
+    /* Laptops and up */
+  
+  }
+  
+  

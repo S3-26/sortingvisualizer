@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soritng Info</title>
+        <link rel="stylesheet" type="text/css" href="search.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="search.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 class="search">Searching </h1>
+                <h1 class="algo">Algorithms</h1>
+            </nav>
+        </header>
+        <!-- <div class="back">
+            <button onclick="window.location.href='sort.html'" id="prev" title="Go Back">Previous</button>
+            <button onclick="window.location.href='search.html'" id="refresh" title="Refresh Page">Top</button>
+            <button onclick="window.location.href='main.html'" id="home" title="Home">Home</button>
+
+    </div> -->
+        <section >
+            <a href="main.html" class="binary">Home</a>
+            <a href="sort.html" class="binary">Back</a>
+
+            <a href="#linear" class="linear" >Linear</a>
+            <a href="#binary" class="binary" >Binary</a>
+            <button id="visual"  onclick="window.location.href='visualsearch.html'" title="Visualise ">Visualise</button>
+           
+        </section>
+
+        <h1 id="linear">Linear Search</h1>
+        <div class="main">
+
+       <div class="linearp">
+        In computer science, a linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+         <br> <br>
+        A linear search runs in at worst linear time and makes at most n comparisons, where n is the length of the list. If each element is equally likely to be searched, then linear search has an average case of 
+        n+1
+        /
+       
+        2
+         comparisons, but the average case can be affected if the search probabilities for each element vary.
+         <br><br>
+         Linear search is rarely practical because other search algorithms and schemes, such as the binary search algorithm and hash tables, allow significantly faster searching for all but short lists. </div>
+    <div class="maint">
+
+        <div  class="lineart">
+            
+            Worst complexity: O(N)
+        </div>
+        <div  class="lineart">
+            
+            Average complexity: O(N)
+        </div>
+        <div  class="lineart">
+            
+            Space complexity: O(1)
+        </div>
+        <div  class="lineart">
+            
+            Worst-case space complexity: O(1) iterative
+        </div>
+        <div  class="lineart">
+            
+            Average performance: O(N/2)
+        </div>
+    </div>     
+</div>
+<h1 id="binary">Binary Search</h1>
+        <div class="main">
+
+        <div>
+
+            <div class="linearp">
+                In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array.
+               
+                
+                Binary search compares the target value to the middle element of the array.
+                <br>
+                <br>
+                Binary Search: Search a sorted array by repeatedly dividing the search interval in half. 
+                Begin with an interval covering the whole array.
+                
+                If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. 
+                <br><br>
+                Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+              </div>
+              <!-- <div class="binaryimage">
+                <img src="Images/binary.png" alt="">
+            </div> 
+            <div>
+
+                <img src="Images/binary.jpg" alt="">
+            </div> -->
+
+            </div>
+        <div class="maint">
+    
+            <div  class="lineart">
+                
+                Worst complexity: O(logN)
+            </div>
+            <div  class="lineart">
+                
+                Average complexity: O(logN)
+            </div>
+            <div  class="lineart">
+                
+                Best complexity: O(1)
+            </div>
+            <div  class="lineart">
+                
+                Space complexity: O(1)
+            </div>
+         
+        </div> 
+    </div>
+
+        
+      <footer>
+          <a href="search.html" style="text-decoration: none; color:darkred ; margin-left:20px">Go To Top</a>
+      </footer>
+    </body>
+    </html>

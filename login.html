@@ -1,0 +1,70 @@
+<html>
+    <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="login.css">
+        <script src="login.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <body>
+        
+            <div class="container">
+                
+                <div class="inner">
+                    <form name="myform" id="myform1" >
+                        <button class="sign" id="registerpage" onclick="form2()" type="button">Register</button>
+                        <h1 style="color: darkred;">Log In</h1>
+                    <div class="user">
+                        <input type="text" name="name" placeholder="Username"   onfocus="this.placeholder=''"  onblur="this.placeholder='Username'">
+                    </div>
+                    <div class="pass">
+                         <input type="password" name="pass1" placeholder="Password "  onfocus="this.placeholder=''"  onblur="this.placeholder='Password'">
+                        </div>
+                        <!-- <div class="pass">
+                            <input type="password" name="pass2" placeholder="Confirm Password"  onfocus="this.placeholder=''"  onblur="this.placeholder='Confirm Password'"> 
+                        </div> -->
+                        <span id="error" ></span>
+                        <div class="remember">
+
+                            <input type="checkbox"  id="rem"  aria-selected="true">Remember Me
+                        </div>
+                    <div class="login">
+                    <button  type="button" onclick="check()">Login</button>                        
+                    </div>
+                        <h5>_________or sign in with social media_________</h5>
+                    <div class="socialmedia">
+                        <div>
+
+                            <button class="media" id="facebook"><i class="material-icons">facebook</i></button>
+                        </div>
+                        <div>
+                            <button class="media" id="google">Google</button>
+                        </div>
+                </div>
+                </form>
+                <form name="myform2" id="myform2" >
+                    <button class="sign"id="loginpage" onclick="form1()">Login</button>
+                    <h1 style="color: darkred;">Register</h1>
+                <div class="user">
+                    <input type="text" name="name2" placeholder="Username"   onfocus="this.placeholder=''"  onblur="this.placeholder='Username'">
+                </div>
+                <div class="pass">
+                     <input type="password" name="pass3" placeholder="Password "  onfocus="this.placeholder=''"  onblur="this.placeholder='Password'">
+                    </div>
+                    <div class="pass">
+                        <input type="password" name="pass4" placeholder="Confirm Password"  onfocus="this.placeholder=''"  onblur="this.placeholder='Confirm Password'"> 
+                    </div>
+                    <span id="error2" ></span>
+                    <div class="remember">
+
+                        <input type="checkbox"  id="rem2"  aria-selected="true">Remember Me
+                    </div>
+                <div class="login">
+                <button type="button" onclick="check2()">Register</button>                        
+              
+            </form>
+            </div>
+        </div>
+      
+        </body>
+</html>
