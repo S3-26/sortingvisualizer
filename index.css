@@ -257,11 +257,12 @@ footer{
     }
 
    .navbar1 ul{
+
        opacity: 0;
        visibility: hidden;
+       justify-content: center;
    }
-   .navbar1 ul li:hover{
-       background-color: black;
+   .navbar1 ul li{
        text-shadow: 3px 4px 1px black;
        color: orange;
    }
@@ -284,7 +285,7 @@ footer{
 
     .navbar1.responsive{
         width: 100%!important;
-        height: 40vh!important;
+        height: 48vh!important;
         /* background-color: black; */
         position: relative;
 
@@ -304,7 +305,6 @@ footer{
       }
 
       .navbar1.responsive ul li:hover {
-       background-color: rgb(191, 179, 179);
        text-shadow: 3px 4px 1px black;
        color: orange;
       }
