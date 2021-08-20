@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="visualsearch.css">
+    </head>
+    <body>
+       <header>
+           <nav>
+               <div class="array_inputs">
+                   <p>Size of array:</p>
+                   <input type="range" id="a_size" min="6" max="20" step="1" value="15" >
+                    <p>Speed of algorithm:</p>
+                    <input  id="a_speed" type="range" min="1" max="7" value="1" step="1" >
+                    <button id="a_generate">Generate Array!</button>
+               </div>
+               <div class="header_right">
+                <p class="nav-heading">Searching Visualizer</p>
+
+                   <div class="algos">
+                       <button>LINEAR</button>
+                       <button>BINARY</button>
+                   </div>
+               </div>
+           </nav>
+
+       </header>
+       <section>
+        <div id="Info_Cont1">
+                <button onclick="window.location.href='search.html'">Previous</button>
+                <button onclick="window.location.href='main.html'">Home</button>
+
+                <br>
+                <p id="input">Enter number <br> for searching: </p>
+                
+                <input type="text" name="" id="inputnumber">
+                <p id="found" style="display: none;">Found</p>
+                <p id="notfound" style="display: none;">Not Found</p>
+        </div>
+      
+           <div id="array_container">
+            
+           </div>
+           <div id="Info_Cont2">
+          
+            <button onclick="window.location.href='visualsearch.html'">Stop And Reset</button>
+            <button onclick="delay_time=0" id="fast">Fast Forward</button>
+        </div>
+           
+    </section>
+    
+    <script src="visualsearch.js"></script>
+    <script src="controls2.js"></script>
+    <script src="Linear.js"></script>
+    <script src="Binary.js"></script>
+    
+    </body>
+</html>
