@@ -2,13 +2,13 @@ body{
     background-color: wheat;
     margin: 0%;
     padding: 0%;
-    display: grid;
-    grid-template-rows: 7% 15% 60%;
+    /* display: grid; */
+    /* grid-template-rows: 5% 1% 15% 60%; */
 }
 
 
 .navbar1{
-    height: 70px;
+    height: 100px;
     background-color: grey;
 }
 .navbar2{
@@ -21,33 +21,41 @@ body{
 
 
 .navbar1 ul{
-    display: flex;
-    float: left;
+    /* margin: auto; */
+    text-align: center;
+    justify-content: center;
+    /* float: left; */
     overflow: hidden;
-    
     
 }
 .navbar1 ul li{
-    border-radius: 90px;
-    
+    display: inline-block;
     list-style-type: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 100px;
 }
+
+
 .navbar1 ul li a {
     color: white;
     font-size: large;
-    
-    
 text-decoration: none;
 padding: 20px 20px 20px 20px;
 
 }
+.sort{
+    text-shadow: -3px 3px 1px black;
+    color: orange;
+    letter-spacing: 1px;
+}
+
 .navbar1 ul li a:hover {
-    color: rgb(211, 199, 199);
     font-size: large;
-    
 text-decoration: none;
 padding: 20px 20px 20px 20px;
-
+text-shadow: 3px 4px 1px black;
+color: orange;
 }
 
 
@@ -56,7 +64,7 @@ padding: 20px 20px 20px 20px;
     margin-left: 10px;
 } */
 .dropdownitem{
-    margin-top: 10px;
+    margin-top: 0px;
     margin-right: 100px;
     display: none;
     background: linear-gradient(90deg,darkred,white,grey);
@@ -69,7 +77,11 @@ padding: 20px 20px 20px 20px;
 }
  .dropdown:hover  .dropdownitem, .dropdownitem a{
     display: block;
-    color: darkred;
+    text-transform:none;
+    line-height: 20px;
+    text-shadow: 3px 2px 1px black;
+    color: orange;
+
 }
 
 section{
@@ -83,11 +95,10 @@ section{
     font-weight: bolder;
     text-align: center;
     font-size: xx-large;
-    color: darkred;
+   
     height: 10em;
     transform: scale(1.5, 1.4);
      /* transform: rotate(44deg); */
-
     justify-content: center;
 }
 
@@ -97,17 +108,17 @@ section{
      border: none;
      width: 500px;
      margin-top: 20px;
-     
      height: 40px;
      border-radius: 80px;
      font-size: large;
      border-radius: 70px;
  }
+
+
   #icon1{
      margin-left: 9px;
      margin-top: 25px;
      position: absolute;
-
      height: 30px;
      width: 30px;
      border-radius: 50%;
@@ -215,9 +226,28 @@ footer{
     justify-content: center;
 }
 
+
+
+#iconbar{
+    color: rgb(155, 58, 58);
+    font-size: 2eem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+
+}
 @media (max-width: 480px)
   /* //Mobiles */
   {
+
+    /* .media{
+        width: 80%;
+    }
+    .copyrights{
+        width: 80%;
+    } */
 
     #voice{
         margin-left: -35px;
@@ -225,6 +255,21 @@ footer{
     .copyrights i{
         margin-left: 20px;
     }
+
+   .navbar1 ul{
+       opacity: 0;
+       visibility: hidden;
+   }
+   .navbar1 ul li:hover{
+       background-color: black;
+       text-shadow: 3px 4px 1px black;
+       color: orange;
+   }
+
+   #iconbar{
+       visibility: visible;
+       opacity: 1;
+   }
 
     .copyrights{
         width: 290px;
@@ -236,6 +281,40 @@ footer{
     .search input{
         width: 95%;
     }
+
+    .navbar1.responsive{
+        width: 100%!important;
+        height: 40vh!important;
+        /* background-color: black; */
+        position: relative;
+
+    }
+    .navbar1.responsive ul{
+      opacity: 1;
+      visibility: visible;
+      /* display: block; */
+    }
+
+
+    .navbar1.responsive ul li {
+        float: none;
+      display: block;
+      text-align: center;
+      line-height: 60px;
+      }
+
+      .navbar1.responsive ul li:hover {
+       background-color: rgb(191, 179, 179);
+       text-shadow: 3px 4px 1px black;
+       color: orange;
+      }
+
+      .navbar1.responsive ul li:hover > a{
+        color: orange;
+       }
+
+
+
   }
   
   @media (min-width: 481px) and (max-width: 1250px)
