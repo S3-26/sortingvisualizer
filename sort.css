@@ -1,0 +1,271 @@
+  
+  * {
+    background-color: rgb(240, 227, 202);
+    margin: 0px; 
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav {
+    background-color: rgb(96, 95, 95);
+    display: grid;
+     grid-template-columns: 25% 70%;
+    column-gap: 10%;
+    padding: 0% 15% 195px 30px;
+  }
+
+nav .sort{
+  background-color: transparent;
+
+  color: wheat;
+  font-size:80px;
+  position: absolute;
+ animation: sort 5s 1;
+ animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ top: 20px;
+  left: 580px;
+}
+@keyframes sort {
+  from{
+    left: 100px;
+
+  }
+  to{
+    left: 580px;
+  }
+}
+
+nav .algo{
+  background-color: transparent;
+
+  position: absolute;
+  animation-name: algo;
+  animation: algo 3s 1;
+  animation-timing-function:ease-out;
+color: wheat;
+  top: 120px;
+  right: 540px;
+}
+
+@keyframes algo {
+  from{
+    right: 300px;
+
+  }
+  to{
+    right: 540px;
+  }
+} 
+
+
+
+.center{
+    margin-left:240px;
+
+    margin-top: 10px;
+
+    
+}
+.b2{
+  background-color: darkred;
+
+  color: wheat;
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20%;
+    width: 180px;
+
+    border:none;
+}
+.b2:hover{
+    background-color:wheat;
+    color: black;
+}
+
+.b1{
+  background-color: darkred;
+
+  color: wheat;
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 180px;
+    border-radius: 20%;
+    border:none;
+}
+.b1:hover{
+    background-color:wheat;
+    color:black;
+}
+
+.b3{
+  background-color: darkred;
+
+  color: wheat;
+  padding: 35px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20%;
+  width: 180px;
+  border:none;
+}
+.b3:hover{
+  background-color:wheat;
+  color: black;
+}
+*{box-sizing: border-box}
+
+.slideshow-container,.slideshow-container2{
+   
+        position: absolute;
+        bottom: 350px;
+        right: 330px;
+      top:250px;
+      height:400px;
+      width:50%;     
+       z-index: 9;
+      }
+
+     
+.two{
+    display:none;
+}
+
+
+
+
+.prev,.next{
+    cursor:pointer;
+    position:absolute;
+    top:40%;
+    width:auto;
+    margin-top: -20px;
+    padding: 16px;
+    color : black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover.next:hover {
+    background-color: rgba(223, 53, 53, 0.8);
+  }
+  .i{
+      border-radius: 50px;
+    height: 100%;
+    width:100%;
+    
+  }
+    
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  marquee{
+    border-radius: 20px;
+    width: 550px;
+    margin-left: 500px;
+    margin-top: 60px;
+      font-size: large;
+     
+ 
+  }
+  #visual{
+    background-color: darkred;
+    padding: 35px 32px;
+    color: wheat;
+    display: none;
+    border-radius: 20%;
+    width: 180px;
+    border:none;
+    
+  }
+
+  
+  table button a{
+    color:rgb(243, 239, 239);
+    font-size: 19px;
+    text-decoration: none;
+  }
+
+  
+  .back button{
+    font-size: large;
+    outline: none;
+    color: darkred;
+    border: none;
+    padding: 20px 20px 20px 20px;
+    /* background-color: darkred; */
+    border-radius: 9px;
+    /* margin-top: 70px; */
+  }
+
+  .back button:hover{
+    cursor: pointer;
+  }
+
+  #prev{
+    /* margin-top: 150px; */
+    /* margin-left: 590px; */
+    margin-right: 10px;
+  }
+
+  #next{
+    /* margin-right: 10px; */
+    width: 120px;
+    float: right;
+  }
+  #refresh{
+    margin-right: 10px;
+  }
+
+  /* footer{
+    margin-bottom: 50px;
+  } */
+
+  @media (max-width: 480px)
+  /* //Mobiles */
+  {
+      
+  }
+  
+  @media (min-width: 481px) and (max-width: 1250px)
+  /* //Tablets */
+  {
+  
+  }
+  
+  @media (min-width: 1251px)
+  {
+    /* Laptops and up */
+  
+  }
+  
+  
